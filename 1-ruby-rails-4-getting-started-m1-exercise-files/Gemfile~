@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails' #, '4.2.0'
+gem 'rails', '4.2.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"
 # Use SCSS for stylesheets
@@ -32,6 +32,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -43,3 +44,26 @@ group :development, :test do
   gem 'spring'
 end
 
+
+# Added at 2019-03-24 18:42:17 +0100 by desktop-uafbdkr\jnune:
+gem "neo4apis" #, "~> 0.9.1"
+
+gem "neo4apis-activerecord", "~> 0.9.1"
+
+# Added at 2019-03-24 19:46:41 +0100 by desktop-uafbdkr\jnune:
+gem "rake", "~> 12.3"
+
+# Added at 2019-03-24 20:50:03 +0100 by jnune:
+
+# Added at 2019-03-24 21:33:05 +0100 by jnune:
+
+gem "pry"
+
+gem "pry-stack_explorer"
+
+gem "pry-byebug"
+
+# Added at 2019-03-24 21:39:54 +0100 by jnune:
+
+# Added at 2019-03-24 22:32:44 +0100 by jnune:
+gem "awesome_print", "~> 1.8"

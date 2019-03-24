@@ -1,23 +1,37 @@
 == README
 
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Here I'm tracking the progress of my first RoR app.
 
 * Ruby version
-2.6
+2.3.3
 
 * System dependencies
 Bundler v.1.16
 
 * Configuration
 
+Install bundler v.1.16
+
 After installing bundler v.1.16 you may need to issue:
 ```gem update --system```
 
-In order to solve the bundler conflicts.
+Issue:
+
+```ruby bin/setup```
+In order to solve the bundler conflicts. Should you add a new dependency, prefer issuing:
+```bundler _1.16_ add ${Package}```
+
+* Using Neo4Apis-ActiveRecord
+
+To avoid conflicts with any of the dependencies around, run neo4apis inside bundler:
+ 
+```bundler _1.16_ exec neo4apis activerecord all_tables --identify-model --import-all-associations``` 
+
+The above command assumes an established connection to neo4j
+
+``` bundler _1.16_ exec neo4apis activerecord models questions answers --identify-model --import-all-associations --neo4j-username neo4j --neo4j-password 123```
+
+
 * Database creation
 
 * Database initialization
@@ -27,6 +41,10 @@ In order to solve the bundler conflicts.
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+To start the application, avoid using the setup instruction
+bundler _1.16_ exec rails server
+
+
 
 * ...
 
