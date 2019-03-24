@@ -1,6 +1,10 @@
 == README
 
-Here I'm tracking the progress of my first RoR app.
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
 
 * Ruby version
 2.6
@@ -10,14 +14,9 @@ Bundler v.1.16
 
 * Configuration
 
-Install bundler v.1.16
-
 After installing bundler v.1.16 you may need to issue:
 ```gem update --system```
 
-Issue:
-
-```ruby bin/setup```
 In order to solve the bundler conflicts.
 * Database creation
 
@@ -28,8 +27,7 @@ In order to solve the bundler conflicts.
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-To start the application, avoid using the setup instruction
-bundler _1.16_ exec rails server
+
 * ...
 
 
